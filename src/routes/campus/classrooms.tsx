@@ -73,6 +73,38 @@ function CampusClassroomsPage() {
             ))}
           </div>
 
+          {/* Classrooms, Seminar Halls & Auditorium Image Banners */}
+          <div className="mt-8 grid gap-6 sm:grid-cols-2">
+            <div className="overflow-hidden rounded-3xl border border-border/80 shadow-soft">
+              <img
+                src="/images/seminarhall.jpg"
+                alt="Seminar Hall & Classrooms"
+                className="h-64 w-full object-cover sm:h-80"
+                referrerPolicy="no-referrer"
+              />
+              <div className="bg-card p-4">
+                <p className="font-bold text-foreground">Seminar Hall &amp; Lecture Complexes</p>
+                <p className="text-xs text-muted-foreground">
+                  ICT-enabled classrooms and AV presentation rooms
+                </p>
+              </div>
+            </div>
+            <div className="overflow-hidden rounded-3xl border border-border/80 shadow-soft">
+              <img
+                src="/images/auditorium.jpg"
+                alt="SDIT College Auditorium"
+                className="h-64 w-full object-cover sm:h-80"
+                referrerPolicy="no-referrer"
+              />
+              <div className="bg-card p-4">
+                <p className="font-bold text-foreground">SDIT College Auditorium</p>
+                <p className="text-xs text-muted-foreground">
+                  Large-capacity venue for symposia and cultural events
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Highlights */}
           <div className="mt-10 rounded-3xl border border-border bg-surface p-6 shadow-soft sm:p-8">
             <div className="flex items-center gap-2">

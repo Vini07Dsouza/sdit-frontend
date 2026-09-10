@@ -85,6 +85,60 @@ function CampusStudentFacilitiesPage() {
             ))}
           </div>
 
+          {/* Student Facilities Image Banners */}
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="overflow-hidden rounded-3xl border border-border/80 shadow-soft">
+              <img
+                src="/images/student_facilities.jpg"
+                alt="Student Facilities"
+                className="h-48 w-full object-cover"
+                referrerPolicy="no-referrer"
+              />
+              <div className="bg-card p-4">
+                <p className="font-bold text-foreground">Student Welfare</p>
+                <p className="text-xs text-muted-foreground">Comprehensive student support</p>
+              </div>
+            </div>
+            <div className="overflow-hidden rounded-3xl border border-border/80 shadow-soft">
+              <img
+                src="/images/hostel.png"
+                alt="Hostel Accommodation"
+                className="h-48 w-full object-cover"
+                referrerPolicy="no-referrer"
+              />
+              <div className="bg-card p-4">
+                <p className="font-bold text-foreground">Hostel Accommodations</p>
+                <p className="text-xs text-muted-foreground">Separate boys &amp; girls hostels</p>
+              </div>
+            </div>
+            <div className="overflow-hidden rounded-3xl border border-border/80 shadow-soft">
+              <img
+                src="/images/shree-devi-canteen.jpg"
+                alt="Shree Devi Canteen"
+                className="h-48 w-full object-cover"
+                referrerPolicy="no-referrer"
+              />
+              <div className="bg-card p-4">
+                <p className="font-bold text-foreground">Campus Cafeteria</p>
+                <p className="text-xs text-muted-foreground">Hygienic food &amp; refreshments</p>
+              </div>
+            </div>
+            <div className="overflow-hidden rounded-3xl border border-border/80 shadow-soft">
+              <img
+                src="/images/shree-devi-eng-transport.jpg"
+                alt="Shree Devi Engineering Transport"
+                className="h-48 w-full object-cover"
+                referrerPolicy="no-referrer"
+              />
+              <div className="bg-card p-4">
+                <p className="font-bold text-foreground">Transportation Fleet</p>
+                <p className="text-xs text-muted-foreground">
+                  Buses connecting Mangaluru &amp; Udupi
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Highlights */}
           <div className="mt-10 rounded-3xl border border-border bg-surface p-6 shadow-soft sm:p-8">
             <div className="flex items-center gap-2">
