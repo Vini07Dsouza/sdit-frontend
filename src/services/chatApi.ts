@@ -93,13 +93,18 @@ export const chatApi = {
       return normaliseChatResponse(await getMockChatResponse(message, sessionId));
     }
 
-    const payload: ChatRequest = sessionId ? { message, session_id: sessionId } : { message };
-    const data = await apiRequest<unknown>("/api/chat", {
-      method: "POST",
-      body: payload,
-      ...(signal ? { signal } : {}),
-    });
+    try {
+      const payload: ChatRequest = sessionId ? { message, session_id: sessionId } : { message };
+      const data = await apiRequest<unknown>("/api/chat", {
+        method: "POST",
+        body: payload,
+        ...(signal ? { signal } : {}),
+      });
 
-    return normaliseChatResponse(data);
+      return normaliseChatResponse(data);
+    } catch {
+      // Fallback gracefully to smart mock knowledge base if API / quota limit is reached
+      return normaliseChatResponse(await getMockChatResponse(message, sessionId));
+    }
   },
 };

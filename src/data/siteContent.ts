@@ -392,4 +392,4 @@ export const suggestedQuestions = [
 ] as const;
 
 export const WELCOME_MESSAGE =
-  "Hello! I'm SERA, your SDIT AI Assistant. I can help you find information about admissions, courses, departments, fees, placements, campus facilities, events, scholarships and other college-related information.";
+  "Hello! I'm SDIT AI-ASSISTANT, your official SDIT AI Assistant. I can help you find information about admissions, courses, departments, fees, placements, campus facilities, events, scholarships and other college-related information.";

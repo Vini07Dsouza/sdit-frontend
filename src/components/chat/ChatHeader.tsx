@@ -27,9 +27,14 @@ export function ChatHeader({ onNewChat, disabled = false }: ChatHeaderProps) {
           <div className="relative">
             <div
               aria-hidden="true"
-              className="grid size-10 place-items-center rounded-xl bg-[#191724] text-[#FF6B4A] ring-1 ring-[#C4B5FD]/45 shadow-[0_0_20px_-4px_rgba(124,58,237,0.3)]"
+              className="grid size-10 shrink-0 place-items-center overflow-hidden rounded-xl bg-[#191724] ring-1 ring-[#C4B5FD]/45 shadow-[0_0_20px_-4px_rgba(124,58,237,0.3)]"
             >
-              <Bot className="size-5 text-[#FF6B4A]" />
+              <img
+                src="/images/sdit_nova_logo.png"
+                alt="SDIT NOVA"
+                className="size-full object-cover"
+                referrerPolicy="no-referrer"
+              />
             </div>
             <span
               className="absolute -bottom-0.5 -right-0.5 size-2.5 rounded-full bg-[#FF6B4A] ring-2 ring-[#0D0B18]"

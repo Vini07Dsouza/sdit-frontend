@@ -20,13 +20,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Shree Devi Institute of Technology, Mangaluru, Karnataka — engineering and technology education, featuring SERA, the SDIT AI Assistant for admissions, academics and campus information.",
+          "Shree Devi Institute of Technology, Mangaluru, Karnataka — engineering and technology education, featuring SDIT NOVA, the SDIT AI Assistant for admissions, academics and campus information.",
       },
       { property: "og:title", content: "Shree Devi Institute of Technology, Mangaluru" },
       {
         property: "og:description",
         content:
-          "Engineering and technology education in Mangaluru, Karnataka, featuring SERA, the SDIT AI Assistant.",
+          "Engineering and technology education in Mangaluru, Karnataka, featuring SDIT NOVA, the SDIT AI Assistant.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

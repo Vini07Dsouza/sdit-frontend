@@ -81,14 +81,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Official college website for Shree Devi Institute of Technology (SDIT), Mangaluru, featuring SERA, the SDIT AI Assistant.",
+          "Official college website for Shree Devi Institute of Technology (SDIT), Mangaluru, featuring SDIT NOVA, the SDIT AI Assistant.",
       },
       { name: "author", content: "SDIT" },
       { property: "og:title", content: "SDIT — Shree Devi Institute of Technology" },
       {
         property: "og:description",
         content:
-          "Official college website for Shree Devi Institute of Technology (SDIT), Mangaluru, featuring SERA, the SDIT AI Assistant.",
+          "Official college website for Shree Devi Institute of Technology (SDIT), Mangaluru, featuring SDIT NOVA, the SDIT AI Assistant.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

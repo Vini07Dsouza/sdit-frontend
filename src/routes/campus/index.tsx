@@ -54,6 +54,15 @@ const FACILITY_ICONS: Record<string, typeof Library> = {
   "student-facilities": Users,
 };
 
+const FACILITY_IMAGES: Record<string, string> = {
+  library: "/images/library.jpg",
+  laboratories: "/images/laboratories.jpg",
+  "computer-facilities": "/images/computer_facilities.jpg",
+  classrooms: "/images/classroom.jpg",
+  sports: "/images/sports_games.jpg",
+  "student-facilities": "/images/student_facilities.jpg",
+};
+
 const AMENITY_ICONS: Record<string, typeof Building> = {
   "seminar-halls": Radio,
   auditorium: Building,
@@ -61,6 +70,15 @@ const AMENITY_ICONS: Record<string, typeof Building> = {
   transportation: Bus,
   hostels: Home,
   "green-campus": Trees,
+};
+
+const AMENITY_IMAGES: Record<string, string> = {
+  "seminar-halls": "/images/seminarhall.jpg",
+  auditorium: "/images/auditorium.jpg",
+  canteen: "/images/shree-devi-canteen.jpg",
+  transportation: "/images/shree-devi-eng-transport.jpg",
+  hostels: "/images/hostel.png",
+  "green-campus": "/images/about.jpg",
 };
 
 function CampusIndexPage() {
@@ -140,14 +158,26 @@ function CampusIndexPage() {
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {campusFacilities.map((facility) => {
               const Icon = FACILITY_ICONS[facility.id] || Library;
+              const imgSrc = FACILITY_IMAGES[facility.id];
 
               return (
                 <Link
                   key={facility.id}
                   to={facility.href}
-                  className="group flex h-full flex-col justify-between rounded-2xl border border-border/80 bg-card p-6 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-navy hover:shadow-card focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lime"
+                  className="group flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-border/80 bg-card p-6 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-navy hover:shadow-card focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lime"
                 >
                   <div>
+                    {imgSrc && (
+                      <div className="mb-4 -mx-6 -mt-6 sm:-mx-7 sm:-mt-7 overflow-hidden">
+                        <img
+                          src={imgSrc}
+                          alt={facility.shortTitle}
+                          className="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          referrerPolicy="no-referrer"
+                        />
+                      </div>
+                    )}
+
                     <div className="flex items-center justify-between">
                       <span className="inline-flex size-11 items-center justify-center rounded-xl bg-surface text-navy transition-colors group-hover:bg-gradient-navy group-hover:text-lime">
                         <Icon className="size-5" />
@@ -205,12 +235,24 @@ function CampusIndexPage() {
             <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {additionalCampusAmenities.map((amenity) => {
                 const Icon = AMENITY_ICONS[amenity.id] || Building;
+                const imgSrc = AMENITY_IMAGES[amenity.id];
                 return (
                   <div
                     key={amenity.id}
-                    className="flex flex-col justify-between rounded-2xl border border-border/70 bg-card p-5 shadow-xs transition-colors hover:border-navy/40 sm:p-6"
+                    className="flex flex-col justify-between overflow-hidden rounded-2xl border border-border/70 bg-card p-5 shadow-xs transition-colors hover:border-navy/40 sm:p-6"
                   >
                     <div>
+                      {imgSrc && (
+                        <div className="mb-4 -mx-5 -mt-5 sm:-mx-6 sm:-mt-6 overflow-hidden">
+                          <img
+                            src={imgSrc}
+                            alt={amenity.title}
+                            className="h-36 w-full object-cover transition-transform duration-300 hover:scale-105"
+                            referrerPolicy="no-referrer"
+                          />
+                        </div>
+                      )}
+
                       <div className="flex items-start justify-between gap-2">
                         <span
                           aria-hidden="true"

@@ -80,13 +80,22 @@ export function ChatMessageItem({ message }: { message: ChatMessage }) {
             : "bg-[#191724] text-[#FF6B4A] ring-1 ring-[#C4B5FD]/40 shadow-[0_0_15px_-3px_rgba(255,107,74,0.3)]"
         }`}
       >
-        {isUser ? <User className="size-4" /> : <Bot className="size-4 text-[#FF6B4A]" />}
+        {isUser ? (
+          <User className="size-4" />
+        ) : (
+          <img
+            src="/images/sdit_nova_logo.png"
+            alt="SDIT NOVA"
+            className="size-full rounded-xl object-cover"
+            referrerPolicy="no-referrer"
+          />
+        )}
       </span>
 
       <div className={`max-w-[85%] sm:max-w-[80%] ${isUser ? "text-right" : "text-left"}`}>
         <p className="mb-1 text-[11px] font-medium text-[#9A95A8] sm:text-xs">
-          <span className="sr-only">{isUser ? "You said" : "SDIT AI Assistant said"} — </span>
-          {isUser ? "You" : "SDIT AI Assistant"} ·{" "}
+          <span className="sr-only">{isUser ? "You said" : "SDIT NOVA said"} — </span>
+          {isUser ? "You" : "SDIT NOVA"} ·{" "}
           <time dateTime={message.createdAt}>{formatTime(message.createdAt)}</time>
         </p>
 

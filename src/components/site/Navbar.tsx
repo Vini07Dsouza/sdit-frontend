@@ -118,14 +118,18 @@ export function Navbar() {
           aria-label="SDIT Home — Shree Devi Institute of Technology, Mangaluru"
           onClick={() => setOpen(false)}
         >
-          <span
-            aria-hidden="true"
-            className="grid size-10 place-items-center rounded-xl bg-gradient-navy text-sm font-bold tracking-tight text-navy-foreground shadow-xs shrink-0"
-          >
-            SD
-          </span>
+          <div className="size-10 overflow-hidden rounded-xl bg-gradient-navy shadow-xs shrink-0">
+            <img
+              src="/images/sdit_nova_logo.png"
+              alt="SDIT NOVA Logo"
+              className="size-full object-cover"
+              referrerPolicy="no-referrer"
+            />
+          </div>
           <span className="leading-tight">
-            <span className="block text-base font-bold tracking-tight text-foreground">SDIT</span>
+            <span className="block text-base font-bold tracking-tight text-foreground">
+              SDIT NOVA
+            </span>
             <span className="block text-[11px] font-medium text-muted-foreground">
               Mangaluru, Karnataka
             </span>

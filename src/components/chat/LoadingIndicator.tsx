@@ -11,7 +11,7 @@ export function LoadingIndicator() {
         <Bot className="size-4 text-[#FF5C7A]" />
       </span>
       <div className="flex items-center gap-2 rounded-2xl border border-[#A78BFA]/25 bg-[#21152F] px-4 py-3 text-[#F7F7FA] shadow-md">
-        <span className="sr-only">SERA is preparing a response</span>
+        <span className="sr-only">SDIT NOVA is preparing a response</span>
         {[0, 1, 2].map((i) => (
           <span
             key={i}

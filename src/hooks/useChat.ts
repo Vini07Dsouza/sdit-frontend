@@ -85,6 +85,7 @@ export function useChat() {
     isLoading,
     error,
     ask,
+    send: ask,
     retry,
     reset,
     hasConversation: messages.length > 0,

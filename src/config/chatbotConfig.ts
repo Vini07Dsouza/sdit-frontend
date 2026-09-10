@@ -10,10 +10,10 @@
  */
 export const chatbotConfig = {
   /** Product name of the assistant. One value to change. */
-  chatbotName: "SERA",
+  chatbotName: "SDIT AI-ASSISTANT",
   /** Short label used in tight spaces (mobile header, avatars). */
-  chatbotShortName: "SERA",
-  tagline: "SDIT AI Assistant",
+  chatbotShortName: "SDIT AI-ASSISTANT",
+  tagline: "AI Assistant",
 
   /** Verified official SDIT contact number in dialable form, e.g. "+918241234567". */
   officialPhone: "",
