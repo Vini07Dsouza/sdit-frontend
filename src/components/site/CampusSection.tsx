@@ -83,8 +83,8 @@ export function CampusSection() {
                   {facility.id === "library" && (
                     <div className="mb-4 -mx-6 -mt-6 overflow-hidden">
                       <img
-                        src="/images/seminarhall.jpg"
-                        alt="Campus Seminar Hall"
+                        src="/images/library.jpg.jpg"
+                        alt="Library"
                         className="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-105"
                         referrerPolicy="no-referrer"
                       />
