@@ -74,6 +74,16 @@ function CampusLibraryPage() {
             ))}
           </div>
 
+          {/* Library Image Banner */}
+          <div className="mt-8 overflow-hidden rounded-3xl border border-border/80 shadow-soft">
+            <img
+              src="/images/library.jpg"
+              alt="Central Library & Digital Resource Centre"
+              className="h-72 w-full object-cover sm:h-96"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+
           {/* Quick Verified Highlights */}
           <div className="mt-10 rounded-3xl border border-border bg-surface p-6 shadow-soft sm:p-8">
             <div className="flex items-center gap-2">

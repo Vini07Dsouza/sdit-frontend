@@ -82,6 +82,16 @@ export function DroneWorkshopPage() {
           </p>
         </div>
 
+        {/* Drone Event Image Banner */}
+        <div className="mt-8 overflow-hidden rounded-3xl border border-border/80 shadow-soft">
+          <img
+            src="/images/drone.png"
+            alt="Drone Industry Ready Workshop"
+            className="h-72 w-full object-cover sm:h-96"
+            referrerPolicy="no-referrer"
+          />
+        </div>
+
         {/* Details Grid */}
         <div className="mt-12 grid gap-8 lg:grid-cols-3">
           <div className="lg:col-span-2 space-y-8">

@@ -73,6 +73,16 @@ function CampusSportsPage() {
             ))}
           </div>
 
+          {/* Sports & Games Image Banner */}
+          <div className="mt-8 overflow-hidden rounded-3xl border border-border/80 shadow-soft">
+            <img
+              src="/images/sports_games.jpg"
+              alt="Sports, Games & Physical Education"
+              className="h-72 w-full object-cover sm:h-96"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+
           {/* Highlights */}
           <div className="mt-10 rounded-3xl border border-border bg-surface p-6 shadow-soft sm:p-8">
             <div className="flex items-center gap-2">
