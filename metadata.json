@@ -1,0 +1,6 @@
+{
+  "name": "SDIT — Shree Devi Institute of Technology",
+  "description": "Official college website for Shree Devi Institute of Technology (SDIT), Mangaluru, featuring SERA, the SDIT AI Assistant.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
